@@ -3,10 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 
 import TopNav from "./components/TopNav";
-import Home from "./pages/Home";
-import Explorer from "./pages/Explorer";
-import About from "./pages/About";
-import Tutorial from "./pages/Tutorial";
+import Home from "./components/Home";
+import Explorer from "./components/Explorer";
+import About from "./components/About";
+import Tutorial from "./components/Tutorial";
 import Footer from "./components/Footer";
 
 export default function App() {
