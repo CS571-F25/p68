@@ -1,7 +1,133 @@
+/* ========= CRISPR COLOR PALETTE ========= */
 :root {
-  --accent: #6f42c1;
-  --muted: #6c757d;
+  --crispr-pink: #ff4fa3;
+  --crispr-blue: #4dc9ff;
+  --crispr-purple: #9b5dff;
+  --crispr-yellow: #ffe45e;
+  --crispr-background: #f7faff;
+  --crispr-dark: #1b1b1d;
 }
+
+/* ========= GLOBAL PAGE STYLE ========= */
+body {
+  background: var(--crispr-background);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--crispr-dark);
+}
+
+/* ========= CRISPR DNA GRADIENT HEADER ========= */
+header {
+  background: linear-gradient(135deg, var(--crispr-pink), var(--crispr-blue));
+  padding: 2.5rem 2rem;
+  text-align: center;
+  color: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* ========= PAGE CONTAINERS ========= */
+.page-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  width: min(90%, 900px);
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+  position: relative;
+}
+
+/* Adds a fun DNA-wave background */
+.page-container::before {
+  content: "";
+  background: url('https://i.imgur.com/2gQv1Bk.png');
+  opacity: 0.07;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+}
+
+/* Make sure content stays above */
+.page-container > * {
+  position: relative;
+  z-index: 5;
+}
+
+/* ========= TITLES ========= */
+h1, h2, h3 {
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--crispr-blue), var(--crispr-purple));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ========= BUTTONS ========= */
+.btn-crispr {
+  background: linear-gradient(135deg, var(--crispr-pink), var(--crispr-purple));
+  color: white !important;
+  border: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  transition: 0.2s ease;
+}
+
+.btn-crispr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 79, 163, 0.3);
+}
+
+/* Disabled button */
+.btn-crispr:disabled {
+  background: #d3d3d3;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ========= CRISPR BUBBLE/INFO CARDS ========= */
+.crispr-card {
+  background: white;
+  border-left: 6px solid var(--crispr-blue);
+  border-radius: 14px;
+  padding: 1.3rem 1.5rem;
+  margin: 1rem 0;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  transition: 0.25s ease;
+}
+
+.crispr-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--crispr-pink);
+}
+
+/* ========= NAVBAR (fun neon look) ========= */
+.navbar {
+  background: var(--crispr-dark);
+}
+
+.navbar a.nav-link {
+  color: var(--crispr-blue) !important;
+  font-weight: 600;
+}
+
+.navbar a.nav-link:hover {
+  color: var(--crispr-pink) !important;
+}
+
+/* ========= FOOTER ========= */
+footer {
+  background: var(--crispr-dark);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--crispr-blue);
+  margin-top: 2rem;
+}
+
 
 #root {
   max-width: 1280px;
