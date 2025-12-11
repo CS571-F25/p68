@@ -11,8 +11,8 @@ export default function TopNav() {
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/explorer">Explorer</Nav.Link>
+            <Nav.Link as={Link} to="/ValidationMethods">Validation Methods</Nav.Link>
             <Nav.Link as={Link} to="/tutorial">Tutorial</Nav.Link>
-            <Nav.Link as={Link} to="/about">About</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

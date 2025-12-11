@@ -5,7 +5,7 @@ import "./index.css";
 import TopNav from "./components/TopNav";
 import Home from "./components/Home";
 import Explorer from "./components/Explorer";
-import About from "./components/About";
+import ValidationMethods from "./components/ValidationMethods";
 import Tutorial from "./components/Tutorial";
 import Footer from "./components/Footer";
 
@@ -17,7 +17,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/explorer" element={<Explorer />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/ValidationMethods" element={<ValidationMethods />} />
           <Route path="/tutorial" element={<Tutorial />} />
         </Routes>
       </main>
