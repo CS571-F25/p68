@@ -19,13 +19,13 @@ export default function Home() {
       <div className="crispr-card">
         <h3>🔬 Try The Tutorials</h3>
         <p>Walk through CRISPR strategies step-by-step.</p>
-        <Button as={Link} to="/tutorial" variant="outline-secondary">Tutorials</Button>
+        <Button as={Link} to="/tutorial" variant="primary">Tutorials</Button>
       </div>
 
       <div className="crispr-card">
         <h3>🧪 Validate Your Edits</h3>
         <p>Explore CRISPR screening methods and validation approaches.</p>
-        <Button as={Link} to="/ValidationMethods" variant="outline-secondary">Validation Methods</Button>
+        <Button as={Link} to="/ValidationMethods" variant="primary">Validation Methods</Button>
       </div>
     </div>
   );

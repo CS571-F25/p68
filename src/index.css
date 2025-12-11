@@ -33,24 +33,22 @@ header {
   margin: 2rem auto;
   padding: 2rem;
   width: min(90%, 900px);
-  background: rgba(224, 173, 31, 0.295);
+  background: #3f4b5f;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.07);
   position: relative;
 }
 
-/* Adds a fun DNA-wave background */
-/*
 .page-container::before {
   content: "";
-  background: url('https://i.imgur.com/2gQv1Bk.png');
+  background: #3f4b5f;
   opacity: 0.07;
   position: absolute;
   inset: 0;
   z-index: 0;
   background-size: cover;
 }
-*/
+
 /* Make sure content stays above */
 .page-container > * {
   position: relative;
@@ -92,7 +90,7 @@ h1, h2, h3 {
 
 /* ========= CRISPR BUBBLE/INFO CARDS ========= */
 .crispr-card {
-  background: white;
+  background: rgba(224, 173, 31, 0.295);
   border-left: 6px solid var(--crispr-blue);
   border-radius: 14px;
   padding: 1.3rem 1.5rem;
