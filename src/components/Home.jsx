@@ -3,27 +3,27 @@ import { Link } from "react-router";
 
 export default function Home() {
   return (
-    <div>
-      <h1>CRISPR Demo Website</h1>
-      <p className="text-muted">
-        Explore how CRISPR-Cas9 identifies genomic targets. Use the Explorer page to enter
-        DNA and gRNA and watch a scanning animation that highlights PAM motifs and candidate targets.
+    <div className="page-container">
+      <h1>Welcome to CRISPR Navigator</h1>
+      <p>
+        Explore interactive lessons, gene editing tools, and CRISPR screening 
+        method visualizations — all in a friendly and colorful environment!
       </p>
 
-      <div className="d-flex gap-3 justify-content-center my-4 flex-wrap">
-        <Button as={Link} to="/explorer" variant="primary">Open Explorer</Button>
-        <Button as={Link} to="/tutorial" variant="outline-secondary">Tutorial</Button>
+      <div className="crispr-card">
+        <h3>🧬 Learn the Basics</h3>
+        <p>Understand Cas9, gRNAs, PAM sequences, and editing mechanisms.</p>
       </div>
 
-      <Card className="card mt-4">
-        <Card.Body>
-          <Card.Title>Classroom Demo</Card.Title>
-          <Card.Text>
-            This tool is designed to help learners visualize CRISPR targeting mechanics: PAM recognition,
-            gRNA binding, and how mismatches affect targeting. Use conservative sequences for classroom demos.
-          </Card.Text>
-        </Card.Body>
-      </Card>
+      <div className="crispr-card">
+        <h3>🔬 Try The Tutorials</h3>
+        <p>Interactive simulations walk you through CRISPR strategies step-by-step.</p>
+      </div>
+
+      <div className="crispr-card">
+        <h3>🧪 Validate Your Edits</h3>
+        <p>Explore CRISPR screening methods and validation approaches.</p>
+      </div>
     </div>
   );
 }
