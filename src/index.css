@@ -10,7 +10,7 @@
 
 /* ========= GLOBAL PAGE STYLE ========= */
 body {
-  background: var(--crispr-background);
+  background: #c98521;
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
@@ -33,7 +33,7 @@ header {
   margin: 2rem auto;
   padding: 2rem;
   width: min(90%, 900px);
-  background: #3f4b5f;
+  background: #c98521;
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.07);
   position: relative;
@@ -120,7 +120,7 @@ h1, h2, h3 {
 
 /* ========= FOOTER ========= */
 footer {
-  background: var(--crispr-background);
+  background: #c98521;
   padding: 1.5rem;
   text-align: center;
   color: var(--crispr-blue);

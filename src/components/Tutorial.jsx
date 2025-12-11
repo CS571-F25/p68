@@ -1,3 +1,5 @@
+import { Card } from "react-bootstrap";
+
 export default function Tutorial() {
   return (
     <div className="page-container">
